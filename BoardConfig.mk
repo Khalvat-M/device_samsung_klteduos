@@ -20,6 +20,8 @@ TARGET_OTA_ASSERT_DEVICE := kltexx,klte,klteduos
 
 KLTEDUOS_PATH := device/samsung/klteduos
 
+BUILD_FINGERPRINT := samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXS1CQD2:user/release-keys
+
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_klteduos_defconfig
 
