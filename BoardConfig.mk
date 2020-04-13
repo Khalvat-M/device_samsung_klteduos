@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common klte
-include device/samsung/klte-common/BoardConfig.mk
+include device/samsung/klteduos-common/BoardConfig.mk
 
 TARGET_OTA_ASSERT_DEVICE := kltexx,klte,klteduos
 
@@ -34,9 +34,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_klteduos
 
 # NFC
 include $(COMMON_PATH)/nfc/pn547/board.mk
-
-# Radio/RIL
-include $(COMMON_PATH)/radio/dual/board.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/klteduos/BoardConfigVendor.mk

@@ -27,13 +27,10 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Fingerprint
-$(call inherit-product, device/samsung/klte-common/fingerprint/product.mk)
+$(call inherit-product, device/samsung/klteduos-common/fingerprint/product.mk)
 
 # NFC
-$(call inherit-product, device/samsung/klte-common/nfc/pn547/product.mk)
-
-# Radio/RIL
-$(call inherit-product, device/samsung/klte-common/radio/dual/product.mk)
+$(call inherit-product, device/samsung/klteduos-common/nfc/pn547/product.mk)
 
 # common klte
-$(call inherit-product, device/samsung/klte-common/klte.mk)
+$(call inherit-product, device/samsung/klteduos-common/klteduos.mk)
