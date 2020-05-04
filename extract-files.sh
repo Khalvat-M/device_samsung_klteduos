@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 set -e
 
 export DEVICE=klteduos
-export DEVICE_COMMON=klte-common
+export DEVICE_COMMON=klteduos-common
 export VENDOR=samsung
+export DEVICE_BRINGUP_YEAR=2014
 
-./../$DEVICE_COMMON/extract-files.sh $@
+./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
