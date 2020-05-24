@@ -1,6 +1,4 @@
-Copyright 2015 - The CyanogenMod Project
-
-Copyright 2017 - The LineageOS Project
+Copyright 2020 - The Khavat-M Project
 
 Device configuration for Samsung Galaxy S5 Dual-SIM variants (SM-G900FD, SM-G900MD).
 ========================================
@@ -21,4 +19,36 @@ Rear Camera  | 16 MP, f/2.2, 31mm, phase detection autofocus, LED flash
 Front Camera | 2 MP, f/2.4, 22mm
 Release Date | June 2014
 
-![Galaxy S5](http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s5-g900f-1.jpg "Galaxy S5")
+![Galaxy S5](https://github.com/Khalvat-M/android_device_samsung_klteduos/blob/10.0/information/klteduos.gif)
+
+
+# For building Android Q
+### create `.repo/local_manifests/roomservice.xml` with the following content:
+
+***
+ 
+        <?xml version="1.0" encoding="UTF-8"?>
+           <manifest>
+        
+           <remote  name="khalvat"
+              fetch="https://github.com/Khalvat-M"
+              revision="10.0" />
+
+           <remote  name="linos"
+              fetch="https://github.com/LineageOS"
+              revision="lineage-17.1" />
+
+              <!--LineageOS -->
+              <project name="android_hardware_samsung" path="hardware/samsung" remote="linos" />
+        
+              <!--Device -->
+              <project name="android_device_samsung_klteduos" path="device/samsung/klteduos" remote="khalvat" />
+              <project name="android_device_samsung_klteduos-common" path="device/samsung/klteduos-common" remote="khalvat" />
+           
+              <!--Kernel -->
+              <project name="kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="khalvat" />
+    
+              <!--Vendor -->
+              <project name="vendor_samsung" path="vendor/samsung" remote="khalvat" />
+                  
+           </manifest>
