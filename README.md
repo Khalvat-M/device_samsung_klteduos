@@ -40,6 +40,7 @@ Release Date | June 2014
 
               <!--LineageOS -->
               <project name="android_hardware_samsung" path="hardware/samsung" remote="linos" />
+              <project name="android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="linos"/>
         
               <!--Device -->
               <project name="android_device_samsung_klteduos" path="device/samsung/klteduos" remote="khalvat" />
