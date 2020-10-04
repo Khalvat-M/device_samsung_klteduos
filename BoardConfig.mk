@@ -25,9 +25,6 @@ BUILD_FINGERPRINT := samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXS1CQD2:user/re
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_klteduos_defconfig
 
-# Fingerprint
-include $(COMMON_PATH)/fingerprint/board.mk
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(KLTEDUOS_PATH):libinit_klteduos
 TARGET_RECOVERY_DEVICE_MODULES := libinit_klteduos
