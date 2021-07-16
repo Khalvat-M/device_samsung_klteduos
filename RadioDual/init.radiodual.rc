@@ -1,0 +1,6 @@
+# Dual Radio
+service vendor.ril-daemon2 /vendor/bin/hw/rild -l vendor/lib/libril-qc-qmi-1.so -c 2
+    class main
+    user radio
+    group radio cache inet misc audio log readproc wakelock
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW

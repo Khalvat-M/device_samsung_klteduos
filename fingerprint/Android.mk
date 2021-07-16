@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2016 The Mokee Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +13,28 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_klteduos.mk
+LOCAL_PATH := $(call my-dir)
 
+include $(CLEAR_VARS)
 
-COMMON_LUNCH_CHOICES := \
-    lineage_klteduos-user \
-    lineage_klteduos-userdebug \
-    lineage_klteduos-eng
+LOCAL_MODULE := fingerprint.msm8974
+LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_SRC_FILES := \
+    fingerprint.c \
+    fingerprint_tz.c \
+    QSEEComAPI.c \
+    hash.c
+
+LOCAL_C_INCLUDES += \
+    external/sqlite/dist
+
+LOCAL_SHARED_LIBRARIES := \
+        liblog \
+        libsqlite
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_PROPRIETARY_MODULE := true
+
+include $(BUILD_SHARED_LIBRARY)
