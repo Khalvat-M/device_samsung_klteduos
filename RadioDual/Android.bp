@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2022 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.radiodual.rc",
+    src: "init.radiodual.rc",
+    relative_install_path: "init",
+}
