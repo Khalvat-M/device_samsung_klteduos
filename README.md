@@ -1,4 +1,4 @@
-Copyright 2020 - The Khavat-M Project
+Copyright 2022 - The Khavat-M Project
 
 Device configuration for Samsung Galaxy S5 Dual-SIM variants (SM-G900FD, SM-G900MD).
 ========================================
@@ -19,10 +19,10 @@ Rear Camera  | 16 MP, f/2.2, 31mm, phase detection autofocus, LED flash
 Front Camera | 2 MP, f/2.4, 22mm
 Release Date | June 2014
 
-![Galaxy S5](https://github.com/Khalvat-M/android_device_samsung_klteduos/blob/11.0/information/klteduos.gif)
+![Galaxy S5](https://github.com/Khalvat-M/android_device_samsung_klteduos/blob/12.1/information/klteduos.gif)
 
 
-# For building Android R
+# For building Android 12.1
 ### create `.repo/local_manifests/roomservice.xml` with the following content:
 
 ***
@@ -32,11 +32,11 @@ Release Date | June 2014
         
  <remote  name="khalvat"
     fetch="https://github.com/Khalvat-M"
-    revision="11.0" />
+    revision="12.1" />
 
  <remote  name="linos"
     fetch="https://github.com/LineageOS"
-    revision="lineage-18.1" />
+    revision="lineage-19.1" />
 
     <!--LineageOS -->
     <project name="android_hardware_samsung" path="hardware/samsung" remote="linos" />
