@@ -1,3 +1,7 @@
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.default_name=Samsung Galaxy S5DUOS
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.multisim.config=dsds \
