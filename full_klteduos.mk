@@ -23,4 +23,4 @@ PRODUCT_NAME := full_klteduos
 PRODUCT_DEVICE := klteduos
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := klte
+PRODUCT_MODEL := klteduos
