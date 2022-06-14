@@ -53,4 +53,7 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(DEVICE_PATH)/recovery/recovery_keys.
 include $(COMMON_PATH)/nfc/pn547/board.mk
 
 # inherit from the proprietary version
-include vendor/samsung/klteduos/BoardConfigVendor.mk
+include vendor/samsung/kltexx/BoardConfigVendor.mk
+
+# inherit from the proprietary version
+include vendor/samsung/msm8974-common/BoardConfigVendor.mk

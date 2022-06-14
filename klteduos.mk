@@ -52,10 +52,13 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/samsung/msm8974-common/nfc/pn547/product.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/klteduos/klteduos-vendor.mk)
+$(call inherit-product, vendor/samsung/kltexx/kltexx-vendor.mk)
 
 # System Properties
 $(call inherit-product, device/samsung/klteduos/system_prop.mk)
 
 # msm8974-common
 $(call inherit-product, device/samsung/msm8974-common/common.mk)
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/msm8974-common/msm8974-common-vendor.mk)
