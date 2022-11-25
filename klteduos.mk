@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.radiodual.rc
 
+# Touch features
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
 # NFC
 $(call inherit-product, device/samsung/msm8974-common/nfc/pn547/product.mk)
 
